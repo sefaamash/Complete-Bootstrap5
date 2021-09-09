@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<h4>BASIC NAV</h4>    
+<ul class="nav"> <!--.nav works with display flex-->
+    <li class="nav-item"> <a class="nav-link active" href="#">Active</a></li>
+    <li class="nav-item"><a href="#" class="nav-link">profile</a></li>
+    <li class="nav-item"><a href="#" class="nav-link">About us</a></li>
+    <li class="nav-item"><a href="#" class="nav-link disabled">Contact</a></li>
+</ul>
+<h4>WE CAN ALSO WRITE WITHOUT (LI) ITS A SAME THING  and also horizontal align</h4>
+<ul class="nav justify-content-center">
+    <a href="" class="nav-link">1</a>
+    <a href="" class="nav-link">2</a>
+    <a href="" class="nav-link">3</a>
+    <a href="" class="nav-link">4</a>
+</ul>
+
+<!--for horizontal alignment (.nav-justify-content-center -->
+<!--for right alignment (.nav-justify-content-end -->
+
+
+<h4>FOR VERTICAL NAV USE FLEX-COLUMN</h4>
+<ul class="nav flex-column"> <!--.nav works with display flex-->
+    <li class="nav-item"> <a class="nav-link active" href="#">Active</a></li>
+    <li class="nav-item"><a href="#" class="nav-link">profile</a></li>
+    <li class="nav-item"><a href="#" class="nav-link">About us</a></li>
+    <li class="nav-item"><a href="#" class="nav-link disabled">Contact</a></li>
+</ul>
+
+
+<h4>TO GENERATE TABS INTERFACE USE NAV-TABS</h4>
+<ul class="nav nav-tabs"> <!--.nav works with display flex-->
+    <li class="nav-item"> <a class="nav-link active" href="#">Active</a></li>
+    <li class="nav-item"><a href="#" class="nav-link">profile</a></li>
+    <li class="nav-item"><a href="#" class="nav-link">About us</a></li>
+    <li class="nav-item"><a href="#" class="nav-link disabled">Contact</a></li>
+</ul>
+
+<h4>FILL THE NAV TO WHOLE WIDTH BY USING NAV-FILL although width of each navlink will be same</h4>
+<ul class="nav nav-pills nav-fill"> <!--.nav works with display flex-->
+    <li class="nav-item"> <a class="nav-link active" href="#">Active</a></li>
+    <li class="nav-item"><a href="#" class="nav-link">profile</a></li>
+    <li class="nav-item"><a href="#" class="nav-link">About us</a></li>
+    <li class="nav-item"><a href="#" class="nav-link disabled">Contact</a></li>
+</ul>
+
+
+<h4>FOR EQUAL WIDTH ALIGNMENT USE NAV-JUSTIFIED</h4>
+<ul class="nav nav-pills nav-justified"> <!--.nav works with display flex-->
+    <li class="nav-item"> <a class="nav-link active" href="#">Active</a></li>
+    <li class="nav-item"><a href="#" class="nav-link">profile</a></li>
+    <li class="nav-item"><a href="#" class="nav-link">About us</a></li>
+    <li class="nav-item"><a href="#" class="nav-link disabled">Contact</a></li>
+</ul>
+
+<!--FOR PILL SHAPED NAV LINK USE NAV-PILLS-->
+
+<h4>Working with flex utilities
+If you need responsive nav variations, consider using a series of flexbox utilities. While more verbose, t
+hese utilities offer greater customization across responsive breakpoints. In the example below,
+ our nav will be stacked on the lowest breakpoint, then adapt to a horizontal layout that fills the
+  available width starting from the small breakpoint.</h4>
+<nav class="nav nav-pills flex-column flex-sm-row">
+  <a class="flex-sm-fill text-sm-center nav-link active" href="#">Active</a>
+  <a class="flex-sm-fill text-sm-center nav-link" href="#">Link</a>
+  <a class="flex-sm-fill text-sm-center nav-link" href="#">Link</a>
+  <a class="flex-sm-fill text-sm-center nav-link disabled" href="#">Disabled</a>
+</nav>
+
+<h4>DROPDOWN IN NAV</h4>
+<ul class="nav "> <!--.nav works with display flex-->
+    <li class="nav-item"> <a class="nav-link active" href="#">Active</a></li>
+   <li class="nav-item dropdown"><a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">DROPDOWN</a>
+    <div class="dropdown-menu">
+        <a href="#" class="dropdown-item">Active</a>
+        <a href="#" class="dropdown-item">Act</a>
+        <a href="#" class="dropdown-item">Ac</a>
+
+    </div>
+</li>
+    <li class="nav-item"><a href="#" class="nav-link">About us</a></li>
+    <li class="nav-item"><a href="#" class="nav-link disabled">Contact</a></li>
+</ul>
+
+<H4>javascript behaviour</H4>
+<ul class="nav nav-tabs" id="myTab" >
+    <li class="nav-item"  >
+      <a class="nav-link active" href="#home" data-toggle="tab">Home</a> <!--if we r using button then use data target instewad of href-->
+    </li>
+    <li class="nav-item">
+      <a class="nav-link " href="#profile" data-toggle="tab">Profile</a>
+    </li>
+    <li class="nav-item" >
+      <a class="nav-link"href="#contact" data-toggle="tab" >Contact</a>
+    </li>
+  </ul>
+  <div class="tab-content" >
+    <div class="tab-pane fade show active"id="home" >Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    <div class="tab-pane fade show" id="profile">hi jascj</div>
+    <div class="tab-pane fade show" id="contact">hwjfdmjQDJJC</div>
+  </div>
+
+
+ 
+</body>
+</html>

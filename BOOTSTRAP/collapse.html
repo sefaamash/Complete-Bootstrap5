@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+    <!--we can hide or show the content with collapse-->
+     
+<div class="container">
+    <button class="btn btn-primary" data-toggle="collapse" data-target="#b">Click me</button>
+    <div  class="collapse" id="b">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    </div>
+</div>
+
+<h4>IN LINK</h4>
+<div class="CONTAINER">
+        <a href="#c" class="btn btn-primary" data-toggle="collapse" >COLLAPSE IN LINK</a>
+        <div class="collapse" id="c">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, facere.
+        </div>
+
+</div>
+
+
+<h4>ACCORDIAN IN WHICH ONE collapsable CONTENT OCCUR AT ONE INSTANCE</h4>
+<!--collapse1-->
+<div class="container">
+    <div id="accordion">
+    <div class="card">
+        <div class="card-header">
+            <a href="#wf" class="card-link" data-toggle="collapse">Collapse1</a>
+        </div>
+    </div>
+    <div class="collapse show" id="wf" data-parent="accordion"> <!--collapse show to show the content// data parent is to link acordion id to create acccordion-->
+        <div class="card-body">
+            hello how are you?
+        </div>
+    </div>
+<!--collapse2-->
+    <div class="container">
+        <div id="accordion">
+        <div class="card">
+            <div class="card-header">
+                <a href="#w" class="collapsed card-link" data-toggle="collapse">Collapse2</a><!--collapsed to hide the content by default-->
+            </div>
+        </div>
+        <div class="collapse " id="w" data-parent="accordion">  <!--collapse show to show the content-->
+            <div class="card-body">
+                hello WELCOME!
+            </div>
+        </div>
+</div>
+</div>
+</body>
+</html>

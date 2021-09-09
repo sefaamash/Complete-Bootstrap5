@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <h4>Responsive images</h4>
+    <!--Images in Bootstrap are made responsive with .img-fluid. max-width: 100%; and height: auto; are applied to the image so that it scales with the parent element.
+-->
+<img src="neha.jpg" class="image-fluid max-width:100%; height:auto;" alt="Responsive image">
+
+<h4>IMAGE THUMBNAIL</h4>
+<!--n addition to our border-radius utilities, you can use .img-thumbnail to give an image a rounded 1px border appearance.
+-->
+<img src="---" alt="..." class="img-thumbnail">
+
+<H4>aligning images</H4>
+<!--Align images with the helper float classes or text alignment classes. block-level images can be centered using the .mx-auto margin utility class.
+-->
+
+<!--TO FLOAT LEFT-->
+<h5>float image to left</h5>
+<img src="neha.jpg" class="rounded-square float-left" alt="..." height="auto" width="20%">
+
+
+<!--TO FLOAT RIGHT-->
+<h5 class=" float-right">float image to right</h5>
+<img src="neha.jpg" class="rounded-circle float-right" alt="..." height="auto" width="20%"><!--we can change the shape of our image bu just changing class  to our desire shape as i did rounded-circle-->
+
+
+
+<!--TO CENTER block-level images can be centered using the .mx-auto margin utility class. d is display
+-->   <h5>block image to center</h5>
+     <img src="neha.jpg" class="rounded mx-auto d-block" alt="..." height="auto" width="20%">
+    
+     <!--<div class="text-center">
+        <img src="neha.jpg" class="rounded mx-auto d-block" alt="..." height="auto" width="20%">
+     </div>-->
+</body>
+</html>

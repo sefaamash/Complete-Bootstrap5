@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<style>
+    .n{
+        
+    }
+</style>
+<body>
+    <H4>navbar brand</H4>
+    <!--he .navbar-brand can be applied to most elements, but an anchor works best as some elements might require utility classes or custom styles.-->
+     <h5>As a link</h5>
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+  </nav>
+  
+  <h5>As a heading</h5>
+  <nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1">Navbar</span>
+  </nav>
+
+
+  <h4>Adding logo with text</h4>
+  <nav class="navbar navbar-light bg-light">
+      <a href="#" class="navbar-brand"><img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+        Bootstrap</a>
+  </nav>
+
+  <h4>COLLAPSABLE NAVBAR WITH DROPDOWN</h4> <!--class="sr-only" for current class-->
+  <nav class="navbar sticky-top  navbar-expand-xl n"><!--positions fixed topand bottom sticky top and bottom-->
+      <a href="#" class="navbar-brand">BOOTSTRAP</a>
+      <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navb"><span class="navbbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navb">
+          <ul class="navbar-nav">
+              <li class="nav-item active"><a href="#" class="nav-link">HOME <span class="sr-only">(current)</span></a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">About us</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Contact us</a></li>
+              <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">DROPDOWN LINK</a>
+               <div class="dropdown-menu">
+                <h class="dropdown-header">Buissness</h>
+                   <a href="#" class="dropdown-item">location</a>
+                   <a href="#" class="dropdown-item">buisness inquiries</a>
+                   <div class="dropdown-divider"></div>
+                   <a href="#" class="dropdown-item">contact our manager</a></div>
+            </li>
+
+          </ul>
+      </div>
+  </nav>
+
+  <h4>dark backgroung</h4>
+  <nav class="navbar sticky-top bg-dark navbar-dark navbar-expand-xl text-align-right" ><!--positions fixed topand bottom sticky top and bottom-->
+    <a href="#" class="navbar-brand">BOOTSTRAP</a>
+    <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navb"><span class="navbbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navb">
+        <ul class="navbar-nav">
+            <li class="nav-item active"><a href="#" class="nav-link">HOME <span class="sr-only">(current)</span></a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About us</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact us</a></li>
+            <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">DROPDOWN LINK</a>
+             <div class="dropdown-menu">
+              <h class="dropdown-header">Buissness</h>
+                 <a href="#" class="dropdown-item">location</a>
+                 <a href="#" class="dropdown-item">buisness inquiries</a>
+                 <div class="dropdown-divider"></div>
+                 <a href="#" class="dropdown-item">contact our manager</a></div>
+          </li>
+
+        </ul>
+       
+    </div>
+    <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+</nav>
+
+
+<h4>HIDECONTENT</h4>
+<nav class="navbar bg-dark navbar-dark ">
+    <a href="#" class="navbar-brand">BOOTSTRAP</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+<div class="pos-f-t">
+   
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class=" bg-dark p-4">
+        <ul class="navbar-nav ">
+            <li class="nav-item active"><a href="#" class="nav-link text-light">HOME <span class="sr-only">(current)</span></a></li>
+            <li class="nav-item"><a href="#" class=" nav-link text-light">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-light ">About us</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-light">Contact us</a></li>
+            <li class="nav-item dropdown text-light"><a href="#" class="nav-link dropdown-toggle text-light" data-toggle="dropdown">DROPDOWN LINK</a>
+             <div class="dropdown-menu text-light">
+              <h class="dropdown-header">Buissness</h>
+                 <a href="#" class="dropdown-item">location</a>
+                 <a href="#" class="dropdown-item">buisness inquiries</a>
+                 <div class="dropdown-divider"></div>
+                 <a href="#" class="dropdown-item">contact our manager</a></div>
+          </li>
+
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+    
+      </div>
+    </div>
+    
+  </div>
+
+</body>
+</html

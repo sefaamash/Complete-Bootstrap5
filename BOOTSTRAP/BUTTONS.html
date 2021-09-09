@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+ 
+</head>
+<body>
+    <h4>COLORFULL BUTTONS</h4>
+    <!--JUST ADD.btn to add button and btn btn-priary for color as ofyour choice-->
+    <button type="button" class="btn btn-primary text-nowrap">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light  text-nowrap">Light</button><!--If you don’t want the button text to wrap, you can add the .text-nowrap class to the button.-->
+<button type="button" class="btn btn-dark">Dark</button>
+<button type="button" class="btn btn-link">Link</button>
+
+
+<h4>BUTTONTAGS</h4>
+<!--we can also give buttons in link atag The .btn classes are designed to be used with the <button> element.
+ However, you can also use these classes on <a> or <input> elements (though some browsers may apply a slightly
+different rendering).When using button classes on <a> elements that are used to trigger in-page functionality
+ (like collapsing content), rather than linking to new pages or sections within the current page, these links
+ should be given a role="button" to appropriately convey their purpose to assistive technologies such as screen
+readers.-->
+<a class="btn btn-primary" href="#" role="button">Link</a> <!--we just role=btn-->
+<button class="btn btn-primary" type="submit">Button</button>
+<input class="btn btn-primary" type="button" value="Input">
+<input class="btn btn-primary" type="submit" value="Submit">
+<input class="btn btn-primary" type="reset" value="Reset">
+
+<h4 class="heading pt-3">Outline buttons</h4>
+<!--   In need of a button, but not the hefty background colors they bring? Replace the default modifier classes 
+    with the {.btn-outline-(col of our choice)} ones to remove all background images and colors on any button.-->
+    <button class="btn btn-outline-primary" type="button">button</button>
+
+<h4 class="heading pt-3">BUTTON Sizes</h4>
+<!-- Fancy larger or smaller buttons? Add .btn-lg or .btn-sm for additional sizes.-->
+<h5>LARGEE</h5>
+<button type="button" class="btn btn-primary btn-lg">Large button</button>
+<button type="button" class="btn btn-secondary btn-lg">Large button</button>
+<h5>small</h5>
+<button type="button" class="btn btn-primary btn-sm">Large button</button>
+<button type="button" class="btn btn-secondary btn-sm">Large button</button>
+
+<h4>BLOCK BUTTONS</h4>
+<!--BUTTON OCCUPIES WHOLE WIDTH OF CONT{Btn-block}-->
+<button  type="button" class="btn btn-danger btn-block">BLOCK BUTTON</button>
+
+<h4>ACTIVE STATE OF BUTTON</h4>
+<!--button will apear darker when in active state {.active} and {aria-pressed="true"}-->
+<a href="#" class="btn btn-primary active" role="button" aria-pressed="true" >ACTIVE BUTTON</a>
+
+<h4>disable STATE OF BUTTON</h4>
+<!--button will apear lighter when in disable state Make buttons look inactive by adding the [disabled} boolean attribute to any <button> element.-->
+<a href="#" class="btn btn-primary " disabled >DISABLE BUTTON</a>
+
+<H4>Checkbox and radio buttons</H4>
+<!--Bootstrap’s .button styles can be applied to other elements, such as <label>s, to provide checkbox or radio
+    style button toggling. Add data-toggle="buttons" to a .btn-group containing those modified buttons to enable
+    their toggling behavior via JavaScript and add .btn-group-toggle to style the <input>s within your buttons.
+     Note that you can create single input-powered buttons or groups of them.The checked state for these buttons
+      is only updated via click event on the button. If you use another method to update the input—e.g., with
+       <input type="reset"> or by manually applying the input’s checked property—you’ll need to toggle .active on
+        the <label> manually.Note that pre-checked buttons require you to manually add the .active class to the input’s <label>.-->
+       
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-secondary active">
+                  <input type="radio" name="options" id="option1" checked> Active
+                </label>
+                <label class="btn btn-secondary">
+                  <input type="radio" name="options" id="option2"> Radio
+                </label>
+                <label class="btn btn-secondary">
+                  <input type="radio" name="options" id="option3"> Radio
+                </label>
+              </div>
+</html>
